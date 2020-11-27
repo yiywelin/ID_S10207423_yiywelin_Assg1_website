@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+	<!--navigation bar-->
+	<div class="navbar">
+		<a href="#section4" style="background-color:#333;color:white;">Concert</a>
+		<a href="#section3" style="background-color:#333;color:white;">Album</a>
+		<a href="#section2" style="background-color:#333;color:white;">About</a>
+		<a href="#section1" style="background-color:#333;color:white;">Home</a>
+	</div>
+
+	<!-- Slide Show -->
+	<section>
+		<img class="mySlides" src="photos/bp_light up the sky.jpg"
+  style="width:100%">
+  <img class="mySlides" src="photos/4 members.jpg"
+  style="width:100%">
+  <img class="mySlides" src="photos/4year-anni.jpg"
+  style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+<div class="main" id="section1">
+  <hr class="topline">
+	<!--'Home' header-->
+	<div id="header">
+		<h2>Home</h2>
+	</div>
+  <hr class="topline">
+
+  <div class="horizontalcontainer">
+    <!--horizontally centered content-->
+    <div class="content">
+      <img src="photos/LovesickGirls_home.jpg" alt="LovesickGirls" class="centerimage">
+      <h2>FIRST FULL ALBUM (THE ALBUM)</h2>
+      <p>'Lovesick Girls', the title song of BLACKPINK's 'THE ALBUMN', is composed of country-style guitar riffs with a refined melodies that leads the overall mood of the song. The lyrics of the song question why people are still looking for love despite of their old uncured pain and wounds. Two of the group members,JISOO and JENNIE also participated in composing this song. <br><br>
+      Apart from 'Lovesick Girls', the albumn contains BLACKPINK's iconic sounds and tracks, from the charismatic Hip-hop sounds of 'How You Like That' which broke the records on YouTube to the exciting and poppy melodies of 'Ice Cream' which also features a popular US Popstar, Selena Gomez. All the songs in BLACKPINK's 'THE ALBUM' are performed in different unique ways and will present the group's boundless musical spectrums.</p>
+      <!--Lovesick girls music video-->
+      <iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/dyRsYk0LyA8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src="photos/The Album_tracklist.jpg" alt="The Album Tracklist" class="center">
+    </div>
+  </div>
+  <!--Home button-->
+  <div class="centeredbutton">
+    <a class="button" href="#section1">Home</a>
+  </div>
+</div>
+  </body>
