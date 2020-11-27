@@ -170,5 +170,122 @@ function carousel() {
   </div>
 </div>
 
+<!--Album Page-->
+<div class="main" id="section3"></div>
+	<hr class="topline">
+	<!--'Album' header-->
+	<div id="header">
+		<h2>Album</h2>
+	</div>
+	<hr class="topline">
+	<!--columns for album-->
+	<!--row 1-->
+	<div class="row">
+		<div class="column">
+			<img src="photos/The album.jpg" alt="The Album" style="width:100%">
+        <ul id="myUL">
+  <li><span class="caret">THE ALBUM<br>&#8287;&#8287;&#8287;&#8287;&#8287;2020.10.02</span>
+    <ul class="nested">
+      <li>1. How You Like That</li>
+      <li>2. Ice Cream (with Selena Gomez)</li>
+      <li>3. Pretty Savage</li>
+      <li>4. Bet You Wanna (Feat.Cardi B)</li>
+      <li>5. Lovesick Girls</li>
+      <li>6. Crazy Over You</li>
+      <li>7. Love To Hate Me</li>
+      <li>8. You Never Know</li>
+    </ul>
+  </li>
+</ul>
+
+      </div>
+      <div class="column">
+        <img src="photos/Ice Cream.png" alt="Ice Cream" style="width:100%">
+        <ul id="myUL">
+  <li><span class="caret">ICE CREAM (with Selena Gomez)<br>&#8287;&#8287;&#8287;&#8287;&#8287;2020.08.28</span>
+    <ul class="nested">
+      <li>1. Ice Cream (with Selena Gomez)</li>
+      
+    </ul>
+  </li>
+</ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="photos/How you like that.png" alt="How You Like That" style="width:100%">
+        <ul id="myUL">
+  <li><span class="caret">HOW YOU LIKE THAT<br>&#8287;&#8287;&#8287;&#8287;&#8287;2020.06.26</span>
+    <ul class="nested">
+      <li>1. How You Like That</li>
+      
+    </ul>
+  </li>
+</ul>
+
+      </div>
+      <div class="column">
+        <img src="photos/Kill this love.jpg" alt="Kill This Love" style="width:100%">
+        <ul id="myUL">
+  <li><span class="caret">KILL THIS LOVE<br>&#8287;&#8287;&#8287;&#8287;&#8287;2019.04.05</span>
+    <ul class="nested">
+      <li>1. Kill This Love</li>
+      <li>2. Don't Know What To Do</li>
+      <li>3. Kick It</li>
+      <li>4. Hope Not</li>
+      <li>5. DDU-DU DDU-DU (Remix)</li>
+    </ul>
+  </li>
+</ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="photos/Square up.jpg" alt="Square Up" style="width:100%">
+        <ul id="myUL">
+  <li><span class="caret">SQUARE UP<br>&#8287;&#8287;&#8287;&#8287;&#8287;2018.06.15</span>
+    <ul class="nested">
+      <li>1. DDU-DU DDU-DU </li>
+      <li>2. Forever Young</li>
+      <li>3. Really</li>
+      <li>4. See U Later</li>
+    </ul>
+  </li>
+</ul>
+      </div>
+      <div class="column">
+        <img src="photos/As if it's your last.png" alt="As If It's Your Last" style="width:100%">
+        <ul id="myUL">
+  <li><span class="caret">AS IF IT'S YOUR LAST<br>&#8287;&#8287;&#8287;&#8287;&#8287;2017.06.22</span>
+    <ul class="nested">
+      <li>1.As If It's Your Last </li>
+    </ul>
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+  <!--Album button-->
+  <div class="centeredbutton">
+    <a class="button" href="#section3">Album</a>
+  </div>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+  });
+}
+</script>
+</div>
+
+<!--Concert Page-->
+
   </body>
 </html>
